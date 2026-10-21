@@ -1,0 +1,90 @@
+.page-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.glass-card {
+  max-width: 420px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 24px;
+  background: radial-gradient(circle at 0% 0%, #1e3c72 0%, #2a5298 50%, #131a26 100%);
+  /* Efecto de cristal (Glassmorphism) */
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.title {  box-sizing: border-box;
+
+  font-weight: 800;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin: 0 0 4px 0;
+}
+
+.subtitle {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 16px 0;
+}
+
+/* Customización del TextField de Material UI mediante clases CSS globales */
+.glass-card .MuiOutlinedInput-root {
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.glass-card .MuiOutlinedInput-root fieldset {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.glass-card .MuiOutlinedInput-root:hover fieldset {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.glass-card .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #3a86ff !important;
+}
+
+.glass-card .MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.glass-card .MuiInputLabel-root.Mui-focused {
+  color: #3a86ff !important;
+}
+
+.glass-card .MuiSvgIcon-root {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Botón estilizado moderno */
+.submit-button {
+  padding: 14px 0 !important;
+  border-radius: 12px !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  text-transform: none !important;
+  background: linear-gradient(90deg, #3a86ff 0%, #00b4d8 100%) !important;
+  box-shadow: 0px 8px 20px rgba(58, 134, 255, 0.3) !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+.submit-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 12px 24px rgba(58, 134, 255, 0.4) !important;
+}
